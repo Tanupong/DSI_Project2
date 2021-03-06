@@ -115,7 +115,62 @@ This data set contains information from the Ames Assessor’s Office used in com
 
 
 ## Summary of Analysis
+To be summarize, In this model, 25 characteristics of the house are used to predict the sale price which is shown below:
+
+**Categorical Features**
+
+| # | Features | High positive impact | High Negative Impact |
+|-|-|-|-|
+| 1 | Neighborhood | **Green Hills, Stone Brook and Northridge Heights**| Sawyer West,Timberland, Edwards and College Creek |
+| 2 | MS Zoning | Floating Village Residential | Commercial Zoning |
+| 3 | MS Subclass | 1-story/1945&older , 2-1/2 story/all ages | duplex-all styles and ages, 2-story pud- 1946&newer |
+| 4 | Exterior covering on house | **Brick Face** | Brick Common |
+| 5 | Masonry veneer type | Stone | Brick Face |
+| 6 | Roof Style | Hip | **Mansard** |
+| 7 | Roof material | **Wood Shingles** | Gravel & Tar |
+| 8 | Bldg Type | Two-family Conversion | **Duplex** |
+| 9 | Heating | Wall Furnace | Hot water or steam heat other than gas |
+| 10 | Basement Exposure | **Good Exposure** | No Exposure |
+| 11 | Rating of basement finished area | **No Basement**| Average Rec Room |
+| 12 | Garage Finish | **No garage** | Rough Finished |
+| 13 | Home Functionality | Typical Functionality | Severely damaged house |
+| 14 | Flatness of the property | Hillside | Depression |
+| 15 | Lot configuration | Cul-de-sac | Frontage on 3 sides of property |
+| 16 | Proximity to various conditions | Adjacent to postive off-site feature | Adjacent to East-West Railroad |
+
+**Numerical Features**
+
+|#|Features|Positive/Negative Impact|
+|-|-|-|
+|1|Total Area in Sq.Ft.|Positive|
+|2|Year Built|Positive|
+|3|Overall Qualty|Positive|
+|4|Basement finished area in Sq.Ft.|Positive|
+|5|Above grade (ground) living area in Sq.Ft.|Positive|
+|6|Total Floor Area in Sq.Ft.|Positive|
+|7|Masonry veneer area in Sq.Ft.|Positive|
+|8|Overall Condition|Positive|
+|9|Garage Area in Sq.Ft.|Positive|
+|10|Lot Area in Sq.Ft.|Positive|
+|11|Exterior Quality|Positive|
+|12|Kitchen Quality|Positive|
+|13|has garage|Negative|
+
+From above tables, for categorical features, there are many things to be considered. First is the **neighborhood and zoning**. The second is the **style** of the house which includes the material used for various parts such as roof, masonry vaneer or exterior covering the house. The third is **functionailty** of the house which are heating, basement,garage. And the last factors is the **land** itself either its flatness, configuration or the position on the street.
+
+For numerical features, it can easily divided into 2 main factors affecting price. 
+One is **area** of any part of the house such as total area,basement and floor which bigger the size mean higher the price. Two is the **Quality** or Condition of each parts such as Exterior Material and kitchen. The higher grade of quality also result in higher sale price. Also if the house is built  in the **latest year** or in the other terms if the house is new, the price is also bigger.
 
 
 ## Conclusions and Recommendations
+Based on our problem statement, we found that
+1. Neighborhood and the location of the house is really matter. If sellers doesn't have the house in particular area, it is hard to rise the price above others house.
+2. Using the right material and the right style can impact your housing price. Wood Shingles as your roof material and if your exterior covering is Brick Face can highly increase the price sold.
+3. Make sure that house can function properly that basement has good exposure, or electricity is good. If not, the price can be a lot lower.
+4. You don't need to build garage if you didn't have one. Surprisingly having garage in Iowa can decrease the price!.
+
+However, this model also has the limitation which are
+1.  The dataset used for train contains only about 2000 data points where the sale price only cover from 12789 USD to 611657 USD. Model will perform badly if the expecting price is out of range.
+2.  The dataset only contains housing price data in IOWA. If the model is going to be used in other states on country, it can perform badly as well.
+3.  Now, the model is slightly overfit and the predicted price doesn't not represent the correct price of the house. It can be lower or higher. please use the model wisely. 
 
