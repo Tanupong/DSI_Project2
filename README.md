@@ -111,6 +111,7 @@ This data set contains information from the Ames Assessor’s Office used in com
 | YrSold        | int   | Year Sold                                                              |
 | SaleType      | str   | Type of sale                                                           |
 
+([*dataset documentation*](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt))
 
 
 ## Summary of Analysis
