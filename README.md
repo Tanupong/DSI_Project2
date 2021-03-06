@@ -14,7 +14,7 @@ Linear regression is a very popular model created from relationship between one 
 
 By obtaining the model, not only the price can be predicted, the importance of each features that affect the price can be investigated. With further analysis, this model can help sellers or anyone interesting in increasing their sale price to correctly make an improvement of their houses and obtain the highest price possible. 
 
-## Problem Statement
+## Problem-Statement
 
 **For customers who want to sell their house, what is an estimated current sale price ? 
 And what should be any improvements that can raise the price up?**
