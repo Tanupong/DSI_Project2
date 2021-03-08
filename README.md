@@ -12,7 +12,7 @@
 
 Linear regression is a very popular model created from relationship between one target variable (or dependent variable) and one or more explanatory variables (independent variable). In this Regression Challenge, Aimes Iowa housing dataset is used to build a model with can predict the estimated sale price of each house. 
 
-By obtaining the model, not only the price can be predicted, the importance of each features that affect the price can be investigated. With further analysis, this model can help sellers or anyone interesting in increasing their sale price to correctly make an improvement of their houses and obtain the highest price possible. 
+By obtaining the model, not only the price can be predicted, the importance of each features that affect the price can be investigated. With further analysis, this model can help sellers or anyone having interest in increasing their sale price to correctly make an improvement of their houses and obtain the highest price possible. 
 
 ## Problem-Statement
 
